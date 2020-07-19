@@ -18,30 +18,44 @@ darkness of that pixel, with higher numbers meaning darker. This pixel-value is 
 integer between 0 and 255. The training data set has 785 columns. The first column
 consists of the class labels and represents the article of clothing. The rest of the
 columns contain the pixel-values of the associated image.
-● To locate a pixel on the image, suppose that we have decomposed x as x = i * 28
-+ j, where i and j are integers between 0 and 27. The pixel is located on row i and
+
+● To locate a pixel on the image, suppose that we have decomposed x as x = i * 28 + j, where i and j are integers between 0 and 27. The pixel is located on row i and
 column j of a 28 x 28 matrix.
-● For example, pixel31 indicates the pixel that is in the fourth column from the left,
-and the second row from the top, as in the ascii-diagram below.
+
+● For example, pixel31 indicates the pixel that is in the fourth column from the left, and the second row from the top, as in the ascii-diagram below.
 
 **Labels--**
 
 Each training and test example is assigned to one of the following labels:
+
 ● 0 T-shirt/top
+
 ● 1 Trouser
+
 ● 2 Pullover
+
 ● 3 Dress
+
 ● 4 Coat
+
 ● 5 Sandal
+
 ● 6 Shirt
+
 ● 7 Sneaker
+
 ● 8 Bag
+
 ● 9 Ankle boot
 
 Summary:
+
 1. Each row is a separate image
+
 2. Column 1 is the class label.
+
 3. Remaining columns are pixel numbers (784 total).
+
 4. Each value is the darkness of the pixel (1 to 255)
 
 
